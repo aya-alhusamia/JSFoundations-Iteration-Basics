@@ -63,8 +63,9 @@ return filt.length
 
 function makeThemDoctors(students) {
   // Your code here
-  const dortor = students.filter(function(student){
-    return  `Dr.${student}`
+  const dortor = students.map(function(student){
+    return `Dr. ${student}`
+    
   })
    return dortor
 }
